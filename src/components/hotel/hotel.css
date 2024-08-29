@@ -1,0 +1,48 @@
+.hotel-line {
+    padding: 20px;
+  }
+  
+  .hotel-cards {
+    display: flex;
+    flex-wrap: nowrap; 
+    gap: 20px; 
+    overflow-x: auto; 
+  
+  }
+  
+  .hotel-card {
+    background-color: #ece0fa; 
+    border-radius: 10px; 
+    padding: 20px;
+    width: 300px; 
+    flex-shrink: 0; 
+  }
+  
+  .hotel-name {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .hotel-rating {
+    font-size: 16px;
+  }
+  
+  .hotel-cost {
+    font-size: 18px;
+  }
+  
+  .hotel-location {
+    font-size: 16px;
+  }
+  
+  .hotel-services {
+    font-size: 14px;
+  }
+
+  .hotel-image {
+    align-items: center;
+    border-radius: 8px;
+    width: 200px;
+    height: 200px;
+  }
+  
