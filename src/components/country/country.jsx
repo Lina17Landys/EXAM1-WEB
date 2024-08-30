@@ -2,23 +2,24 @@ import { useState } from 'react'
 import './country.css'
 
 const Country = ({ destinosdla }) => {
-    return (
-     
-      <div>
-        <h1>Aviable hotels</h1>
-        
-          {destinosdla.map((item, index) => (
-            <div>
-            <h1 key={index}>
-              {item.nombre}  
-            </h1>
-            <p>{item.precio}</p>
-            
-            </div>
-          ))}
-       
-      </div>
-    );
-  };
+    const destinosArray = Object.values(destinosdla);
 
-export default Country
+    return (
+        <div>
+            <h1>Available Destinations</h1>
+
+            {destinosArray.map((item, index) => (
+                <div key={index} className="destination-card">
+                    <div className="des-cards">
+                        <h2>{item.nombre}</h2>
+                        <img src={item.imagen} alt={item.nombre} />
+                        <p>Precio: ${item.precio}</p>
+                    </div>
+                </div>
+            ))}
+        </div>
+    );
+};
+
+export default Country;
+

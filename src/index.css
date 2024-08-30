@@ -1,3 +1,9 @@
 * {
   font-family: Arial, Helvetica, sans-serif;
+  align-items: center;
+  margin-left:30px;
+}
+
+.sub {
+  margin-left: 650px;
 }
